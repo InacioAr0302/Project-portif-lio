@@ -47,6 +47,7 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .logo {
+  margin: 15px;
   font-size: 50px;
   text-decoration: none;
   font-family: poppins, sans-serif;
@@ -95,13 +96,13 @@
   height: 3px;
   border-radius: 3px;
   background: #808080;
-  margin: 5px auto;
+  margin: 5px 15px;
   transition: all 0.4s;
 }
 /* section top*/
 .topDecoration {
   width: 100%;
-  min-height: 100vh;
+  height: 85vh;
   flex-wrap: wrap;
   gap: 10px;
   background-image: url(../imagens/background-topDecoration.jpg);
@@ -465,6 +466,7 @@
     height: 70%;
     border-radius: 4px;
     flex-direction: column;
+    justify-content: center;
     background: #0f2027;
     gap: -10px;
     transition: 0.3s;
@@ -484,19 +486,23 @@
   }
 }
 
-@media (max-width: 405px) {
+@media (max-width: 425px) {
   .topDecoration {
     width: 100%;
-    height: auto;
+    height: 77vh;
     background-size: cover;
   }
   .textDecoration {
     flex-wrap: nowrap;
     font-size: 25px;
+    text-align: center;
   }
 
   .textDecorationDescription {
-    font-size: 20px;
+    margin-top: 50px;
+    font-size: 17px;
+    text-align: left;
+    padding: 10px;
   }
   /* Sobre Mim */
   .about-Me {
@@ -538,6 +544,10 @@
     height: auto;
   }
   .footerItems ul {
-    font-size: 45px;
+    font-size: 34px;
+  }
+  .footerItems h4 {
+    padding: 5px;
+    text-align: center;
   }
 }
