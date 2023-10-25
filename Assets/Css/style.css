@@ -482,6 +482,12 @@
 
   /* top decoration */
 
+  .topDecoration {
+    width: 100%;
+    height: 77vh;
+    background-size: cover;
+  }
+
   .textDecorationDescription {
     margin-top: 4rem;
     font-size: 1.1rem;
