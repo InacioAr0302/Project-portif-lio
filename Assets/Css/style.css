@@ -480,9 +480,23 @@
     margin: 16px 0;
   }
 
+  /* top decoration */
+
+  .textDecorationDescription {
+    margin-top: 4rem;
+    font-size: 1.1rem;
+    text-align: left;
+    padding: 25px;
+  }
+
   /* .... */
   .about-Me-Description {
     width: 100%;
+  }
+
+  .footerItems h4 {
+    padding: 5px;
+    text-align: center;
   }
 }
 
