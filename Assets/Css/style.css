@@ -104,7 +104,7 @@
   min-height: 100vh;
   flex-wrap: wrap;
   gap: 10px;
-  background-image: url(/Assets/imagens/background-topDecoration.jpg);
+  background-image: url(../imagens/background-topDecoration.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
