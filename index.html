@@ -4,35 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./Assets/Css/style.css" />
     <title>Folio</title>
   </head>
   <body>
-    <header class="header" id="backtop">
-      <nav class="menuNav">
-        <h1 class="logonavBar">INÁCIO.</h1>
-        <div class="menuToglle"></div>
-        <div class="menuNavList">
-          <ul>
-            <li>
-              <a href="#sobreMim">
-                <ion-icon name="person-outline"></ion-icon>
-                Sobre Mim
-              </a>
-            </li>
-            <li>
-              <a href="#skills">
-                <ion-icon name="tv-outline"></ion-icon>
-                Habilidades
-              </a>
-            </li>
-            <li>
-              <a href="#projects"
-                ><ion-icon name="build-outline"></ion-icon>
-                Projetos
-              </a>
-            </li>
-          </ul>
+    <header class="header">
+      <nav class="navigation">
+        <a id="backtop" class="logo">INÁCIO.</a>
+
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#contact">Contatos</a></li>
+          <li class="nav-item">
+            <a href="./Assets/Sections/aboutMe.html">Sobre Mim</a>
+          </li>
+          <li class="nav-item">
+            <a href="./Assets/Sections/skills.html">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a href="./Assets/Sections/projects.html">projetos</a>
+          </li>
+        </ul>
+        <div class="menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
       </nav>
     </header>
@@ -40,108 +35,32 @@
       <p class="textDecoration">INÁCIO ARAÚJO</p>
       <p class="textDecorationDescription">
         Sou um desenvolvedor front-end sempre <br />
-        buscando aperfeiçoar meus conhecimentos <br />
-        para assim desenvolver softwares de qualidade.
+        buscando aprimorar meus conhecimentos <br />
+        para desenvolver softwares de qualidade.
       </p>
     </section>
-    <section class="about-Me">
-      <div>
-        <h1 id="sobreMim" class="about-Me-Title">SOBRE MIM</h1>
-        <img
-          src="./imagens/Picsart_22-12-15_11-44-04-731.jpg"
-          alt="img"
-          class="about-Me-Img"
-        />
-      </div>
-      <p class="about-Me-Description">
-        Olá eu sou Inácio Araújo
-        <br />
-        <br />
-        Eu sempre tive muita curiosidade sobre programação, porém só entrei
-        nessa área em Abril de 2023, uns amigos que também são devs me
-        incentivaram.
-        <br />
-        <br />
-        Estou focado em estudar as principais tecnologias da web inclusive a
-        área do back-end, minha meta é ser um dev fullstack, pretendo me
-        especializar na aréa mobile.
-      </p>
-    </section>
-    <div class="skillsTittleContainer">
-      <h1 class="skills-Title" id="skills">HABILIDADES</h1>
-    </div>
-    <section class="skills-Cards">
-      <div class="main-Cards">
-        <div class="cardImg">
-          <img src="./imagens/Html5.png" alt="imgHtml5" />
-        </div>
-        <div class="cardDescription">
-          <h2>HTML5</h2>
-          <p>
-            HTML é uma linguagem de marcação utilizada na construção de páginas
-            na Web. Documentos HTML podem ser interpretados por navegadores.
-          </p>
-          <a target="_blank" href="https://pt.wikipedia.org/wiki/HTML">
-            Ver Mais
-          </a>
-        </div>
-      </div>
-      <div class="main-Cards">
-        <div class="cardImg">
-          <img src="./imagens/css3.png" alt="imgCss3" />
-        </div>
-        <div class="cardDescription">
-          <h2>CSS3</h2>
-          <p>
-            Cascading Style Sheets é um mecanismo para adicionar estilos a uma
-            página web, aplicado diretamente nas tags HTML ou ficar contido
-            dentro das tags style.
-          </p>
-          <a
-            target="_blank"
-            href="https://pt.wikipedia.org/wiki/Cascading_Style_Sheets"
-            >Ver Mais</a
-          >
-        </div>
-      </div>
-      <div class="main-Cards">
-        <div class="cardImg">
-          <img src="./imagens/java-script.png" alt="imgjavascript" />
-        </div>
-        <div class="cardDescription">
-          <h2>JAVA SCRIPT</h2>
-          <p>
-            JavaScript é uma linguagem de programação interpretada estruturada,
-            de script em alto nível com tipagem dinâmica fraca e multiparadigma.
-          </p>
-          <a target="_blank" href="https://pt.wikipedia.org/wiki/JavaScript"
-            >Ver Mais</a
-          >
-        </div>
-      </div>
-    </section>
-    <section class="projects">
-      <h1 class="projectTitle" id="projects">PROJETOS</h1>
-      <div class="cardContent">
-        <div class="cards">
-          <h1>EM BREVE</h1>
-        </div>
-      </div>
-    </section>
+
     <footer class="footer">
       <div class="footerItems">
+        <h2 id="contact">Contatos</h2>
         <ul>
           <li>
             <a href="#"><ion-icon name="logo-discord"></ion-icon></a>
           </li>
           <li>
-            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a
+              target="_blank"
+              href="https://instagram.com/inacio_ar47?igshid=NGExMmI2YTkyZg=="
+              ><ion-icon name="logo-instagram"></ion-icon
+            ></a>
           </li>
           <li>
             <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
           </li>
           <li>
-            <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+            <a target="_blank" href="https://github.com/InacioAr0302"
+              ><ion-icon name="logo-github"></ion-icon
+            ></a>
           </li>
         </ul>
         <p>© Copyright 2023 all rights reserved.</p>
@@ -156,6 +75,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="./index.js"></script>
+    <script src="./Assets/Js/index.js"></script>
   </body>
 </html>

@@ -1,0 +1,543 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family= Oswald :wght@500 & display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #555;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: 2px solid yellow;
+  border-radius: 50px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9acd32;
+}
+
+/* header */
+.header {
+  width: 100%;
+  height: 134px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.logo {
+  font-size: 50px;
+  text-decoration: none;
+  font-family: poppins, sans-serif;
+  color: #ffff;
+  user-select: none;
+}
+.navigation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+}
+
+.navigation ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+.navigation ul li a {
+  padding: 10px;
+  color: #ffff;
+  font-family: Montserrat, sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.navigation ul li a:hover {
+  background: #2b4c57;
+  border-radius: 5px;
+}
+/* Menu hamburgue*/
+.menu {
+  cursor: pointer;
+  display: none;
+}
+
+.menu .bar {
+  padding: 2px;
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 3px;
+  background: #808080;
+  margin: 5px auto;
+  transition: all 0.4s;
+}
+/* section top*/
+.topDecoration {
+  width: 100%;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-image: url(/Assets/imagens/background-topDecoration.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .topDecoration ul {
+  padding: 50px;
+  gap: 20px;
+  list-style: none;
+  font-size: 4rem;
+  display: flex;
+} */
+
+.textDecoration {
+  padding: 40px;
+  font-size: 30px;
+  color: #ffff;
+  font-family: "Noto Sans", sans-serif;
+}
+.textDecorationDescription {
+  padding: 25px;
+  font-size: 25px;
+  color: #ffff;
+  font-family: "Montserrat", sans-serif;
+}
+/* sobre Mim */
+.about-Me {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(/Assets/imagens/backgroundAboutme.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #010204;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.about-Me-Title {
+  color: #ffff;
+  margin-top: 27px;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Noto Sans", sans-serif;
+}
+.about-Me-Img {
+  width: 370px;
+  height: 420px;
+  padding: 40px;
+}
+
+.about-Me-Description {
+  width: 50%;
+  padding: 50px;
+  color: #ffff;
+  font-size: 25px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+/* Habilidades */
+.skillsTittleContainer {
+  width: 100%;
+  padding: 50px;
+  font-size: 25px;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  justify-content: center;
+}
+.skills-Title {
+  color: #ffff;
+  text-align: center;
+  border-bottom: 2px solid #ffff;
+  font-family: "Noto Sans", sans-serif;
+  border-style: none;
+}
+.skills-Cards {
+  padding: 40px 40px;
+  width: 100%;
+  min-height: 100vh;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 100px 50px;
+}
+.main-Cards {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #a9a9a9;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.main-Cards:hover {
+  height: 440px;
+}
+.cardImg {
+  position: absolute;
+  width: 215px;
+  height: 257px;
+  border-radius: 14px;
+  overflow: hidden;
+  top: 20px;
+  transition: 0.5s;
+}
+.cardImg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main-Cards:hover .cardImg {
+  top: -100px;
+  scale: 0.75;
+}
+.cardDescription {
+  position: absolute;
+  top: 295px;
+  width: 100%;
+  height: 50px;
+  padding: 0 30px;
+  transition: 0.5s;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.5s;
+}
+.main-Cards:hover .cardDescription {
+  top: 150px;
+  height: 280px;
+}
+.cardDescription h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  color: #332;
+  font-family: "Noto Sans", sans-serif;
+}
+.cardDescription p {
+  color: #332;
+  font-family: "Montserrat", sans-serif;
+}
+.cardDescription a {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #555;
+  color: #ffff;
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 7px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.cardDescription a:hover {
+  background-color: #332;
+  transition: 0.5s;
+}
+/* Projetos */
+.projects {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.projectTitle {
+  padding: 25px;
+  font-size: 45px;
+  color: #ffff;
+  font-family: "Noto Sans", sans-serif;
+}
+.card-project {
+  width: 400px;
+  height: 370px;
+  padding: 10px;
+  background: #a9a9a9;
+  border-radius: 15px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+/* scroll do card */
+.card-project::-webkit-scrollbar {
+  width: 8px;
+}
+.card-project::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: 2px solid #ffff00;
+}
+.card-project::-webkit-scrollbar-thumb:hover {
+  background: #9acd32;
+}
+.card-project::-webkit-scrollbar-track {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+.card-project h1 {
+  padding: 10px;
+  color: #222;
+  font-size: 40px;
+  font-family: oswald, sans-serif;
+  text-align: center;
+}
+.card-project-item {
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(212, 212, 212);
+  border-radius: 10px;
+}
+.card-project-item ul li {
+  padding: 15px;
+}
+/* Footer */
+.footer {
+  padding: 30px;
+  width: 100%;
+  height: auto;
+  border-top: 1px solid #a9a9a9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.footerItems h2 {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  color: #fff;
+  font-family: poppins, sans-serif;
+}
+.footerItems ul {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+.footerItems ul li:hover {
+  background: #9acd32;
+  font-size: 65px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.footerItems p {
+  padding: 20px;
+  font-size: 20px;
+  color: #ffff;
+}
+
+.footerItems h4 a {
+  font-size: 20px;
+  color: #ffff;
+  text-decoration: none;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #808080;
+  border-radius: 5px;
+}
+.footerItems h4 a:hover {
+  background-color: #222;
+}
+
+/* Responssividade */
+
+@media (max-width: 831px) {
+  .navigation {
+    padding: 10px;
+  }
+  .logo {
+    font-size: 34px;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Configuração menu hamburguer */
+  .menu {
+    display: block;
+  }
+
+  .menu.ativo .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .menu.ativo .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .menu.ativo .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    width: 100%;
+    height: 70%;
+    border-radius: 4px;
+    flex-direction: column;
+    background: #0f2027;
+    gap: -10px;
+    transition: 0.3s;
+  }
+
+  .nav-menu.ativo {
+    right: 0;
+    transition: all 0.5s;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  /* .... */
+  .about-Me-Description {
+    width: 100%;
+  }
+}
+
+@media (max-width: 405px) {
+  .topDecoration {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+  .textDecoration {
+    flex-wrap: nowrap;
+    font-size: 25px;
+  }
+
+  .textDecorationDescription {
+    font-size: 20px;
+  }
+  /* Sobre Mim */
+  .about-Me {
+    width: 100%;
+    height: auto;
+  }
+  .about-Me-Img {
+    width: 280px;
+    min-height: 350px;
+  }
+  .about-Me-Description {
+    width: 99%;
+    font-size: 20px;
+  }
+  /* Habilidades */
+  .skills-Title {
+    font-size: 40px;
+  }
+  .main-Cards {
+    width: 370px;
+    height: 350px;
+  }
+  .cardImg {
+    width: 200px;
+    height: 230px;
+  }
+  .cardDescription {
+    font-size: 15px;
+  }
+  /* Projetos */
+  .card-project {
+    padding: 10px;
+    width: 90%;
+    height: 280px;
+  }
+  /* Footer */
+  .footer {
+    width: 100%;
+    height: auto;
+  }
+  .footerItems ul {
+    font-size: 45px;
+  }
+}
